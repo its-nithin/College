@@ -1,0 +1,1461 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [
+          {
+            "position": {
+              "x": -1134,
+              "y": 90.99999999999966
+            },
+            "size": {
+              "width": 480,
+              "height": 270
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "598831f0-350e-4eab-83ea-ec4966afbcef",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -374.99999999999994,
+              "y": 110.99999999999994
+            },
+            "size": {
+              "width": 510,
+              "height": 380
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "58ab3647-150d-4734-924e-55e00ffb04a1",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -1096.5,
+              "y": 510
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Victims\n(Publisher)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fce72faa-8dbb-4dd8-9ab8-db25579eadbc"
+                },
+                {
+                  "group": "right",
+                  "id": "f58b9694-396c-4a95-bd77-6139d8fa56a7"
+                },
+                {
+                  "group": "bottom",
+                  "id": "016f8838-97b3-46e2-a757-63f6cf5a0694"
+                },
+                {
+                  "group": "left",
+                  "id": "e3987e44-0c47-4d5d-99f6-b13c0ae790c0"
+                }
+              ]
+            },
+            "id": "a2d8b139-6804-4280-8d9a-864ef01c742a",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Victims\n(Publisher)",
+              "description": "These are individuals in danger who use the application to send an Emergency Message with their location.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -1104,
+              "y": 181.00000000000017
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT Drone (1)\n(Broker)\n"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9038447-b452-443a-be97-8b2589aba5ad"
+                },
+                {
+                  "group": "right",
+                  "id": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+                },
+                {
+                  "group": "left",
+                  "id": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+                }
+              ]
+            },
+            "id": "ba0bfec2-e361-4dd4-b155-00b6d7c19097",
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT Drone (1)\n(Broker)\n",
+              "description": "These are physical devices that interact with each other and the user, facilitating message collection and transmission.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "children": [
+              "d9dd50ce-b9c5-4bc3-891b-220143d635dd"
+            ]
+          },
+          {
+            "position": {
+              "x": -802,
+              "y": 181.00000000000017
+            },
+            "size": {
+              "width": 130,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT Drone (n)\n(Broker)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9038447-b452-443a-be97-8b2589aba5ad"
+                },
+                {
+                  "group": "right",
+                  "id": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+                },
+                {
+                  "group": "left",
+                  "id": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+                }
+              ]
+            },
+            "id": "4f14b191-adc6-4f15-b237-7a5aaf23dc59",
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT Drone (n)\n(Broker)",
+              "description": "These are physical devices that interact with each other and the user, facilitating message collection and transmission.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -180,
+              "y": 404
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 7,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "acfc6b60-98b5-45f1-8acb-76564e017897"
+                },
+                {
+                  "group": "right",
+                  "id": "d412680f-092a-40fa-a6c2-0f2a90edc3b0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6bb5b574-559e-4524-937c-0a707288b87c"
+                },
+                {
+                  "group": "left",
+                  "id": "8a940e45-b47c-4c1d-bc00-3bc91ab7d0e7"
+                }
+              ]
+            },
+            "id": "cb261700-8640-424d-b55a-366bda388017",
+            "data": {
+              "type": "tm.Store",
+              "name": "Database",
+              "description": "Stores the messages received from the MQTT subscriber that need to be uploaded to the dashboard.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": true,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -30,
+              "y": 620
+            },
+            "size": {
+              "width": 130,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Disaster Response\nTeam"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 8,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fce72faa-8dbb-4dd8-9ab8-db25579eadbc"
+                },
+                {
+                  "group": "right",
+                  "id": "f58b9694-396c-4a95-bd77-6139d8fa56a7"
+                },
+                {
+                  "group": "bottom",
+                  "id": "016f8838-97b3-46e2-a757-63f6cf5a0694"
+                },
+                {
+                  "group": "left",
+                  "id": "e3987e44-0c47-4d5d-99f6-b13c0ae790c0"
+                }
+              ]
+            },
+            "id": "750ad28f-71b5-4242-847f-e10784320eb8",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Disaster Response\nTeam",
+              "description": "The Rescue Team accesses the dashboard and takes appropriate actions to rescue the victims.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Emergency\nMessage",
+              "description": "The Emergency Message is sent from the user's location, in this case, the victim's location, to the drones.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Emergency\nMessage"
+            ],
+            "id": "9466a3d9-b9b1-4192-8043-fa5ad462f3ab",
+            "source": {
+              "cell": "a2d8b139-6804-4280-8d9a-864ef01c742a",
+              "port": "fce72faa-8dbb-4dd8-9ab8-db25579eadbc"
+            },
+            "target": {
+              "cell": "ba0bfec2-e361-4dd4-b155-00b6d7c19097",
+              "port": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.3: Pass Along\nMessage",
+              "description": "The message from the drones is forwarded to the MQTT broker.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "1.3: Pass Along\nMessage"
+            ],
+            "id": "672bfbb3-e46a-46f3-bc8c-cfb5fe1ef12f",
+            "source": {
+              "cell": "4f14b191-adc6-4f15-b237-7a5aaf23dc59",
+              "port": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+            },
+            "target": {
+              "cell": "27d798e8-e79c-4660-a5c5-9b9e591d829e",
+              "port": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+            },
+            "vertices": [
+              {
+                "x": -520,
+                "y": 200
+              },
+              {
+                "x": -460,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.2: Forwarding\nMessage",
+              "description": "The Emergency Location Message is relayed between drones to ensure it is successfully transmitted.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "1.2: Forwarding\nMessage"
+            ],
+            "id": "aa1e3c28-aa66-4ef9-a086-62c6cfea0b7d",
+            "source": {
+              "cell": "ba0bfec2-e361-4dd4-b155-00b6d7c19097",
+              "port": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+            },
+            "target": {
+              "cell": "4f14b191-adc6-4f15-b237-7a5aaf23dc59",
+              "port": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.4: Push Message",
+              "description": "The received message is forwarded to the MQTT server (subscriber).",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "1.4: Push Message"
+            ],
+            "id": "43be7b7d-3168-47c3-8a5c-e1bc67bdbb5e",
+            "source": {
+              "cell": "27d798e8-e79c-4660-a5c5-9b9e591d829e",
+              "port": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+            },
+            "target": {
+              "cell": "3f4178ee-51b8-4191-b6d9-536eb56634e4",
+              "port": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.5: Log Messages",
+              "description": "Forwards the messages that need to be logged into the database.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "1.5: Log Messages"
+            ],
+            "id": "cad2ac6d-7399-40f9-9df7-d9e4597ceeb2",
+            "source": {
+              "cell": "3f4178ee-51b8-4191-b6d9-536eb56634e4",
+              "port": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+            },
+            "target": {
+              "cell": "cb261700-8640-424d-b55a-366bda388017",
+              "port": "acfc6b60-98b5-45f1-8acb-76564e017897"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.2: Retrieval Query",
+              "description": "A query initiated from the dashboard to the database to retrieve data.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "2.2: Retrieval Query"
+            ],
+            "id": "b4f57289-9f87-4501-8afe-8fee97d4c3ab",
+            "source": {
+              "cell": "22efc55b-0679-442e-a0b2-e3a09793eb47",
+              "port": "d9038447-b452-443a-be97-8b2589aba5ad"
+            },
+            "target": {
+              "cell": "cb261700-8640-424d-b55a-366bda388017",
+              "port": "8a940e45-b47c-4c1d-bc00-3bc91ab7d0e7"
+            },
+            "vertices": [
+              {
+                "x": -290,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.3: Retrieved Data",
+              "description": "The data is fetched from the database.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "2.3: Retrieved Data"
+            ],
+            "id": "6e006551-2d53-47d5-8647-e97db70dac80",
+            "source": {
+              "cell": "cb261700-8640-424d-b55a-366bda388017",
+              "port": "6bb5b574-559e-4524-937c-0a707288b87c"
+            },
+            "target": {
+              "cell": "22efc55b-0679-442e-a0b2-e3a09793eb47",
+              "port": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+            },
+            "vertices": [
+              {
+                "x": -80,
+                "y": 560
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.1: Access\nAlerts",
+              "description": "The Response Team accesses the dashboard to assess and manage emergency rescue locations.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "2.1: Access\nAlerts"
+            ],
+            "id": "e5e948b1-e3b8-4293-9c55-918b79eed662",
+            "source": {
+              "cell": "750ad28f-71b5-4242-847f-e10784320eb8",
+              "port": "e3987e44-0c47-4d5d-99f6-b13c0ae790c0"
+            },
+            "target": {
+              "cell": "22efc55b-0679-442e-a0b2-e3a09793eb47",
+              "port": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+            },
+            "vertices": [
+              {
+                "x": -160,
+                "y": 680
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": -322,
+              "y": 181.00000000000006
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT Central\nBroker\n"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9038447-b452-443a-be97-8b2589aba5ad"
+                },
+                {
+                  "group": "right",
+                  "id": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+                },
+                {
+                  "group": "left",
+                  "id": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+                }
+              ]
+            },
+            "id": "27d798e8-e79c-4660-a5c5-9b9e591d829e",
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT Central\nBroker\n",
+              "description": "Acts as a central broker between the Publisher (Victims) and the Subscriber (MQTT Server).",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -40,
+              "y": 181.00000000000006
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "MQTT\nSubscriber\n"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 12,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9038447-b452-443a-be97-8b2589aba5ad"
+                },
+                {
+                  "group": "right",
+                  "id": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+                },
+                {
+                  "group": "left",
+                  "id": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+                }
+              ]
+            },
+            "id": "3f4178ee-51b8-4191-b6d9-536eb56634e4",
+            "data": {
+              "type": "tm.Process",
+              "name": "MQTT\nSubscriber\n",
+              "description": "The server receives the emergency messages and logs them into the database.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": -350,
+              "y": 530
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Dashboard"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 13,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9038447-b452-443a-be97-8b2589aba5ad"
+                },
+                {
+                  "group": "right",
+                  "id": "c4af0d72-051e-4536-a2bc-3123df73bc18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bc8cc6b6-2535-4c7c-b2bc-36cbc754a380"
+                },
+                {
+                  "group": "left",
+                  "id": "14addb44-0428-4d5f-8ab9-946acd4fcec9"
+                }
+              ]
+            },
+            "id": "22efc55b-0679-442e-a0b2-e3a09793eb47",
+            "data": {
+              "type": "tm.Process",
+              "name": "Dashboard",
+              "description": "An interface displaying the Emergency Message with location details retrieved from the database, accessible to the response team.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -950.25,
+              "y": 110.99999999999994
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Drone Network"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 15,
+            "id": "a1f51dd1-75a0-4a85-bb9f-4f5e6604be59",
+            "data": {
+              "type": "tm.Text",
+              "name": "Drone Network",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -224.99999999999994,
+              "y": 121.00000000000017
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Crisis Management Server"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 16,
+            "id": "eb86eb7c-fc98-452e-acc5-45a340c76602",
+            "data": {
+              "type": "tm.Text",
+              "name": "Crisis Management Server",
+              "hasOpenThreats": false
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
